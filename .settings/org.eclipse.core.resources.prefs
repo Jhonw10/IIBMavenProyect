@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+encoding//mqsi/RecordDistributor.msgflow=UTF-8
+encoding//mqsi/RecordProcessor.subflow=UTF-8
+encoding//mqsi/Route.subflow=UTF-8

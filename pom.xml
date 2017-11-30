@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>co.com.path</groupId>
+  <artifactId>MQ_Unidireccional_Flows</artifactId>
+  <version>0.0.1</version>
+  <packaging>iib-bar</packaging>
+  <name>MQUnidireccionalPath</name>
+  
+  <build>		
+		<defaultGoal>package</defaultGoal>
+		
+		<resources>
+			<resource>
+				<directory>.</directory>				
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>ch.sbb.maven.plugins</groupId>
+				<artifactId>iib-maven-plugin</artifactId>
+				<version>2.3-SNAPSHOT</version>				
+				<configuration>
+					<toolkitInstallDir>C:\Program Files\IBM\IIB\10.0.0.2\tools</toolkitInstallDir>
+					<barName>C:\Users\jhonolve\JenkinsConfig\Artifact\MQ_Unidireccional_Flows.bar</barName>
+					<workspace>D:\Proyectos\workspaceIIB</workspace>
+					<versionString>1.0</versionString>
+					<cleanBuild>true</cleanBuild>
+					<deployAsSource>true</deployAsSource>
+					<esql21>false</esql21>
+					<applicationName>MQ_Unidireccional_Flows</applicationName>
+					<configPropFileDirectory>D:\Proyectos\workspaceIIB\MQ_Unidireccional_Flows</configPropFileDirectory>					
+					<defaultPropertiesFile>D:\Proyectos\workspaceIIB\MQ_Unidireccional_Flows\target\iib\default.properties</defaultPropertiesFile>					
+					<debugWorkspace>true</debugWorkspace>
+				</configuration>
+
+				<extensions>true</extensions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

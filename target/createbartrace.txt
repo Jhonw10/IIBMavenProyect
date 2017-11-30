@@ -1,0 +1,23 @@
+[2017/11/30/09:24:57] [INFO] CommandProcessor: process { mqsicreatebar arguments: } 
+[2017/11/30/09:24:57] [INFO] CommandProcessor: process { [-b, D:\Proyectos\workspaceIIB\MQ_Unidireccional_Flows\target\iib\MQ_Unidireccional_Flows.bar, -cleanBuild, -a, MQ_Unidireccional_Flows, -deployAsSource, -trace, -v, D:\Proyectos\workspaceIIB\MQ_Unidireccional_Flows\target\createbartrace.txt, -wmbtData] } 
+[2017/11/30/09:24:58] [INFO] CommandProcessor: process { Disable auto-build before opening the projects } 
+[2017/11/30/09:24:58] [INFO] CommandProcessor: openWorkspace {  } 
+[2017/11/30/09:24:58] [INFO] CommandProcessor: openWorkspace { List of applications to be processed: MQ_Unidireccional_Flows } 
+[2017/11/30/09:24:59] [INFO] CommandProcessor: process { Enable auto-build after the projects are opened } 
+[2017/11/30/09:24:59] [INFO] CommandProcessor: waitForBuildsToComplete { Waiting for build to complete } 
+[2017/11/30/09:25:13] [INFO] CommandProcessor: process { Building projects in the workspace } 
+[2017/11/30/09:25:13] [INFO] CommandProcessor: waitForBuildsToComplete { Waiting for build to complete } 
+[2017/11/30/09:25:25] [INFO] CommandProcessor: cleanBuildProjects { Done cleaning projects } 
+[2017/11/30/09:25:25] [INFO] CommandProcessor: waitForBuildsToComplete { Waiting for build to complete } 
+[2017/11/30/09:25:36] [INFO] CommandProcessor: process { Check the workspace error } 
+[2017/11/30/09:25:36] [INFO] CommandProcessor: doCompile {  } 
+[2017/11/30/09:25:36] [INFO] AddToBARFileOperation: barGeneratorDelegate { Adding MQ_Unidireccional_Flows/.project to BAR file } 
+[2017/11/30/09:25:36] [INFO] ApplicationAddOperation: barGeneratorDelegate { Adding MQ_Unidireccional_Flows/mqsi/RecordDistributor.msgflow to BAR file } 
+[2017/11/30/09:25:36] [INFO] ApplicationAddOperation: barGeneratorDelegate { Adding MQ_Unidireccional_Flows/application.descriptor to BAR file } 
+[2017/11/30/09:25:36] [INFO] ApplicationAddOperation: barGeneratorDelegate { Adding MQ_Unidireccional_Flows/application.descriptor to BAR file } 
+[2017/11/30/09:25:36] [INFO] ApplicationAddOperation: barGeneratorDelegate { Adding MQ_Unidireccional_Flows/mqsi/RecordDistributor_Filter.esql to BAR file } 
+[2017/11/30/09:25:36] [INFO] ApplicationAddOperation: barGeneratorDelegate { Adding MQ_Unidireccional_Flows/mqsi/RecordProcessor.subflow to BAR file } 
+[2017/11/30/09:25:36] [INFO] ApplicationAddOperation: barGeneratorDelegate { Adding MQ_Unidireccional_Flows/mqsi/Route.subflow to BAR file } 
+[2017/11/30/09:25:36] [INFO] ApplicationAddOperation: barGeneratorDelegate { Adding MQ_Unidireccional_Flows/pom.xml to BAR file } 
+[2017/11/30/09:25:36] [INFO] CommandProcessor: saveBar {  } 
+[2017/11/30/09:25:36] [INFO] CommandProcessor: closeWorkspace {  } 
