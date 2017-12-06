@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="3915d89e-dac4-4335-81ae-417beb5d1011" activeEnvironment="Default" name="MQ_Unidireccional_Flows" resourceRoot="" soapui-version="5.3.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="35cb2487-c2ea-43ac-9c64-33eac0e3a41c" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://local.sura.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://local.sura.com</con:endpoint></con:endpoints><con:resource name="Pc" path="/pc" id="eada413c-1c00-4868-a398-34c104e6f330"><con:settings/><con:parameters/><con:method name="Pc 1" id="667b1c22-34e9-4d85-b18a-62640ef84ccc" method="GET"><con:settings/><con:parameters/><con:request name="Request 1" id="d74fa096-9f1d-460a-95a4-5637234a9afb" mediaType="application/json"><con:settings/><con:endpoint>http://local.sura.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="f82ab345-6cee-44e1-a2ae-499b76fdf743" name="TestSuite File PAth"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="df60472f-b983-4c5b-9e7a-8a29ab76da9d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase File OK Move" searchProperties="true"><con:settings/><con:testStep type="properties" name="Properties" id="a77f8f1e-d591-4b9e-a26e-5fc5e183285b"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>fileName</con:name><con:value>fileID67417.txt</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script Create File" id="be9aaa77-643b-4c1a-8658-d7aed8de21e8"><con:settings/><con:config><script>import java.util.Random
+// get properties from testCase, testSuite and project
+def r = new Random()
+def sol = (String)("ID" + r.nextInt(99999))
+String path = "D:/Apps/INPUT/"
+String filename = "file" + sol + ".txt"
+String url =  path + filename
+// creates a new file test.txt  
+boolean success = new File(url).createNewFile() 
+testRunner.testCase.getTestStepByName("Properties").setPropertyValue("fileName",filename)
+log.info filename</script></con:config></con:testStep><con:testStep type="delay" name="10000" id="c2bf8e5c-13a3-488e-82b1-b430348d800a"><con:settings/><con:config><delay>6000</delay></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script Read File" id="ffec51f5-a2c8-4e73-843d-6026aa324a96"><con:settings/><con:config><script>import java.util.Random
+// get properties from testCase, testSuite and project
+def r = new Random()
+def sol = (String)("ID" + r.nextInt(99999))
+String pathRead = "D:/Apps/INPUT/mqsiarchive/"
+def filename = testRunner.testCase.getTestStepByName("Properties").getPropertyValue( "fileName" )
+String url =  pathRead + filename
+// read a new file test.txt  
+String fileContents = new File(url).text
+
+log.info filename</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
