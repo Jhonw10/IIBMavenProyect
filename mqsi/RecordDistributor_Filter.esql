@@ -5,7 +5,7 @@ CREATE FILTER MODULE RecordDistributor_Filter
 	BEGIN
 		DECLARE fileName CHARACTER;		
 		SET fileName = LocalEnvironment.File.Name;
-		IF CONTAINS(fileName,'.csv') THEN
+		IF CONTAINS(fileName,'.csv2') THEN
 			RETURN TRUE;
 		ELSE			
 			RETURN FALSE;
