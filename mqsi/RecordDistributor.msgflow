@@ -18,7 +18,7 @@
       <nodes xmi:type="ComIbmFileInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="18,120" inputDirectory="D:\Apps\INPUT" filenamePattern="*file*" processedFileAction="moveToArchive" replaceDuplicateArchives="true" messageDomainProperty="BLOB" recordDetection="fixedLength">
         <translation xmi:type="utility:ConstantString" string="File Input"/>
       </nodes>
-      <nodes xmi:type="ComIbmFilter.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="270,116" filterExpression="esql://routine/mqsi#RecordDistributor_Filters.Main">
+      <nodes xmi:type="ComIbmFilter.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="270,116" filterExpression="esql://routine/mqsi#RecordDistributor_Filter.Main">
         <translation xmi:type="utility:ConstantString" string="Filter"/>
       </nodes>
       <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="499,36" queueName="QUEUE_LOCAL_OTHER" destinationQueueManagerName="QUEUE_MANAGER" transactionMode="yes" persistenceMode="yes" queueManagerName="">
