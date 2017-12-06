@@ -8,7 +8,6 @@
   
   <build>		
 		<defaultGoal>package</defaultGoal>
-		
 		<resources>
 			<resource>
 				<directory>.</directory>				
@@ -21,7 +20,7 @@
 				<version>2.3-SNAPSHOT</version>				
 				<configuration>
 					<toolkitInstallDir>C:\Program Files\IBM\IIB\10.0.0.2\tools</toolkitInstallDir>
-					<barName>C:\Users\jhonolve\JenkinsConfig\Artifact\MQ_Unidireccional_Flows.bar</barName>
+					<barName>D:\Proyectos\workspaceIIB\MQ_Unidireccional_Flows\target\iib\MQ_Unidireccional_Flows.bar</barName>
 					<workspace>D:\Proyectos\workspaceIIB</workspace>
 					<versionString>1.0</versionString>
 					<cleanBuild>true</cleanBuild>
@@ -32,7 +31,6 @@
 					<defaultPropertiesFile>D:\Proyectos\workspaceIIB\MQ_Unidireccional_Flows\target\iib\default.properties</defaultPropertiesFile>					
 					<debugWorkspace>true</debugWorkspace>
 				</configuration>
-
 				<extensions>true</extensions>
 			</plugin>
 		</plugins>
